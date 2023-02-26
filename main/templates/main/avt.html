@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Автокраны{% endblock %}
+
+{% block content %}
+
+{% for i in ec %}
+
+{% if i.category == 'Автокраны' %}
+<div class="gl-stravt">
+  <h2>{{i.title}}</h2>
+   <p>{{i.mod}}</p>
+    
+    <p><img class='imgone' width="200px"
+        src={{i.photo.url}}></p>
+        <a class='podr' href={{ i.get_absolute_url }}><button>подробнее</button></a>
+     <br>
+</div>   
+{% endif %}
+
+{% endfor %}
+
+
+{% endblock %}

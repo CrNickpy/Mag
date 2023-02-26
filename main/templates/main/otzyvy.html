@@ -1,0 +1,43 @@
+
+
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %} Отзывы{% endblock %}
+
+{% block content %}
+<div class="otzyvy-gl">
+<h3>  Oтзывы о нас :</h3><br>
+{% for i in otz %}
+<div class="otzyvy">
+
+<p>{{i.name}}</p>
+<p>{{i.text}}</p>
+<p>{{i.date}}</p>
+
+</div> 
+
+        
+   
+{% endfor %}
+<div id="osot">
+<a href="{% url 'otzyv' %}">Оставить отзыв</a>
+</div>
+</div>
+<nav class="list-pages" >
+    <ul>
+        
+        {% for p in paginator.page_range %}
+            {% if page_obj.number == p %}
+            <li class="page-numv">
+                {{ p }}</li>
+            {% else %}
+        <li class="page-num" onclick="location.href='?page={{p}}';">
+            <a href="#">{{ p }}</a>
+
+        </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</nav>
+{% endblock %}

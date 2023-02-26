@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{title}}{% endblock %}</title>
+    <link type="text/css" href="{% static 'main/css/main.css' %}" rel="stylesheet"/>
+</head>
+<body>
+<div class="upper">
+    
+</div>
+<div class="header">
+
+        {% block mainmenu %}
+            
+			<ul  class="mainmenu">
+                <li class="logo"> <a href="{% url 'home' %}"> <img src="{% static 'main/img/s.png' %}" width="38px" alt=""><b>Stech</b></a></li>
+                <li class="logo">8(800)888-888</li>
+            {% for m in menu %}
+
+			<li class="my-top"><a href="{% url m.url_name %}">{{m.title}}</a></li>
+            {% endfor %}
+			</ul>
+			
+        {% endblock mainmenu %}
+</div>
+
+    
+<div class='eee'>
+<aside class="side">
+     <div class="side2">
+    <h2 >Категории:</h2>
+    </div>
+    <ul class="st">
+
+        
+        <img  src='{% static 'main/img/kran.png' %}' width="65px">
+        
+        <li class="aaa"><a href={% url 'avt' %}>Автокраны</a> </li>
+        <img  src='{% static 'main/img/12.png' %}' width="65px">
+
+        <li class="aaa"><a href={% url 'exc' %}>Эксковаторы</a> </li>
+        <img  src='{% static 'main/img/ss.png' %}' width="65px">
+
+        <li class="aaa"><a href={% url 'ssv' %}>Самосвалы</a> </li>
+        <img  src='{% static 'main/img/234.png' %}' width="65px">
+
+        <li class="aaa"><a href={% url 'pr' %}>Прочее</a> </li>
+    
+
+    </ul>
+
+
+</aside>
+<main>
+
+{% block content %}
+{% endblock %}
+</main>
+</div>
+</body>
+</html>

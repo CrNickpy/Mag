@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Эксковаторы{% endblock %}
+
+{% block content %}
+
+
+{% for j in ec %}
+{% if j.category == 'Эксковаторы' %}
+<div class="gl-stravt">
+<h2>{{j.title}}</h2>
+<p>{{j.mod}}</p>
+    
+<p><img class='imgone' width="200px" src={{j.photo.url}}></p>
+<a class='podr 'href={{ j.get_absolute_url }}><button>подробнее</button></a>
+</div>
+{% endif %}
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    background: #ebebf1;
+    
+    
+}
+
+.upper {
+    
+    color: rgb(40, 36, 36);
+    font-size: small;
+    text-align: right;
+    display: flex;
+
+    
+
+}
+
+aside {
+    float: left;
+    background: rgb(253, 253, 253) ;
+    width: 260px;
+    border-radius: 10px;
+    height: 550px;
+    border: 1px solid #3e3c3c;
+    overflow: hidden;
+    flex-grow : 1 ;
+    padding: 15px;
+    margin-left: 25px;
+    position: fixed;
+
+}
+
+aside h2 {
+    font-size: medium;
+}
+aside ul {
+    list-style: none;
+
+}
+aside  li a :{
+    color: black;
+    text-decoration: none;
+    font-size: medium;
+    display: block;
+    
+    margin: 12px 0;
+}
+ 
+.st :hover  {
+    transform: scale (1.2);
+    text-decoration: none;
+
+}
+.mainmenu {
+    overflow: hidden;
+    white-space: nowrap;
+    position: fixed;
+    
+   
+    margin-top: 1px;
+    margin-left: 11px;
+    width: 97vw;
+    height: 80px;
+    background-color: rgb(250, 249, 249);
+    border : 1px solid rgb(21, 20, 20);
+    border-color: rgb(157, 154, 154);
+    border-radius: 18px;
+    overflow: hidden;
+
+
+}
+.mainmenu a {
+    color: rgb(50, 3, 86);
+    font-size: large;
+    text-decoration: none;
+
+    
+    
+
+}
+.mainmenu a:hover{
+    color: #dbdada;
+   
+}
+.mainmenu img {
+    margin-top: 20px;
+}
+.my-top  {
+    display: inline;
+    width: 60%;
+    margin-left: 11% ; 
+    
+    
+}
+
+.my-top  a {
+    color: rgb(74, 17, 17);
+
+}
+.my-top a:hover {
+    transform: scale(1.2);
+}
+
+.header {
+    margin-top: 3px;
+    margin-left: 12px;
+    width: 98vw;
+    height: 80px;
+    
+    border-radius: 18px;
+    overflow: hidden;
+    
+
+}
+main {
+    width: calc(100%-450px);
+}
+.side2 {
+    background: #f7f3f3;
+    height: 60px;
+    width: 172px;
+    margin-left: 30px;
+    border-radius: 15px;
+    margin-top: 40px;
+    border: 1px solid rgb(4, 4, 4);
+}
+.side2 h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #151d30;
+    font-size: 20px;
+    padding-top: 0px;
+
+}
+.st {
+    margin-left: 20px;
+    margin-top: 30px;
+    display: block;
+}
+.st li {
+    margin-left: 80px;
+    display: block;    
+
+    
+    
+} 
+
+
+ .logo  {
+    margin-left: 40px;
+    text-decoration: none;
+    list-style: none;
+    bottom: 40px;
+    display: inline;
+   
+ }
+
+ .gl-str {
+    text-align: center;
+    margin-top: 38px;
+ }
+.gl-str p {
+    font-size: 25px;
+    color: rgb(53, 35, 83);
+}
+.aaa a {
+    text-decoration: none;
+    color: rgb(24, 23, 23);
+    font-size: large;
+    display: block;
+    transition: all 0.3s ease;
+}
+.aaa a:hover{
+    color: rgb(121, 125, 125);
+    transform: scale(1.1);
+}
+.imgone {
+    border-radius: 11px;
+
+}
+.podr {
+    color: rgb(56, 53, 53);
+    margin-left: 230px;
+
+}
+.gl-stravt  {
+    margin-left: 600px;
+    background: #ffffff;
+    height: 300px;
+    width: 460px;
+    margin-top: 30px;
+    border-radius: 12px;
+    padding: 3px;
+    margin-bottom: 40px;
+  
+}
+
+
+button {
+    font-size: 18px;
+    padding: .3em 1.1em;
+   
+   
+}
+
+	
+input {
+   width:300px;
+   height: 35px;
+   font-size: 30px;
+   text-align: center;
+   border-radius: 5px;
+}
+.btnindex {
+    margin-top: 30px;
+}
+.numer h1 {
+    margin-left: 200;
+}
+.numer {
+    width: 650px; 
+	height: 600px; 
+	padding: 30px; 
+    margin-left: 550px;
+
+}
+.numer img {
+    padding: 30px;
+}
+.numer h2 {
+    font-size: 18px;
+    color: rgb(56, 54, 54);
+}
+.numer p {
+     font-size: 28px;
+     margin-top: 30px;
+     text-align: right;
+     color: rgb(132, 11, 11);
+}
+main, about h1  {
+    margin-top: 50px;
+    text-align: center;
+    
+}
+main, about, p {
+    margin-top: 20px;
+}
+.otzyvy  {
+    background: #ffffff;
+    height: 130px;
+    width: 800px;
+    padding: 3px;
+    margin-top: 40px;
+    margin-left: 500px;
+    border-radius: 10px;
+}
+.otzyvy p {
+    color: rgb(28, 71, 71);
+}
+.gl-index {
+     height: 500px;
+     width: 1000px;
+     background-color: #fffcfc;
+     margin-left: 400px;
+     border-radius: 20px;
+     padding: 5px;
+}
+.otzyvy-gl h3 {
+      color: rgb(132, 83, 15);
+      text-align: left;
+      margin-left: 380px;
+}
+.g-otz {
+    background: #ffffff;
+    width: 700px;
+    height: 480px;
+    margin-left: 500px;
+    border-radius: 25px;
+    padding: 30px;
+    margin-top: 40px;
+}
+.clform {
+    color: rgb(70, 70, 74);
+    font-size: 20px;
+    border-color:#e1dddd;
+    border: 1px; 
+    
+    border-style:ridge;
+    
+
+
+     
+}
+.about {
+    background: #ffffff;
+    width: 800px;
+    height: 280px;
+    margin-left: 430px;
+    border-radius: 25px;
+    padding: 30px;
+    margin-top: 40px;
+
+
+}
+.about2 {
+    background: #ffffff;
+    width: 300px;
+    height: 110px;
+    margin-left: 700px;
+    border-radius: 20px;
+    padding: 18px;
+    margin-top: 20px;
+
+}
+.g-cont {
+    background: #ffffff;
+    width: 600px;
+    height: 280px;
+    margin-left: 500px;
+    border-radius: 25px;
+    padding: 30px;
+    margin-top: 40px;
+}
+.postcont {
+    background: #ffffff;
+    width: 800px;
+    height: 230px;
+    margin-left: 430px;
+    border-radius: 25px;
+    padding: 60px;
+    margin-top: 80px;
+}
+.postcont p {
+    color: rgb(45, 34, 34);
+    font-style:italic;
+    font-size: 23px;
+}
+.list-pages {
+    display: block;
+}
+.page-num {
+    display: inline-block;
+    width: 50px;
+    height: 35px;
+    background: #d5d7db;
+    border-radius: 18px;
+    padding-top: 15px;
+
+    
+}
+.page-num:hover{
+    background: rgb(255, 255, 255);
+}
+
+.page-num a {
+    color: #000;
+    text-decoration: none;
+
+}
+.page-num a:hover {
+    color: rgb(117, 114, 114);
+}
+.page-numv {
+    display: inline-block;
+    width: 50px;
+    height: 35px;
+    background: #f1f2f4;
+    border-radius: 18px;
+    padding-top: 15px;
+}
+
+
+.list-pages {
+    margin-top: 30px;
+    margin-bottom: 45px;
+    
+}
+.eee {
+}
+
+#osot {
+    width: 180px;
+    height: 35px;
+    background: #f2f3f6;
+    margin-left: 70%;
+    margin-top: 33px;
+    padding-top: 16px;
+    border-radius: 10px;
+    border:  1px solid;
+    border-color: rgb(60, 58, 58);
+}
+#osot a{
+    color: rgb(35, 34, 34);
+    text-decoration: none;
+    display: block;
+    transition: all .2s ease;
+
+}
+#osot a:hover {
+    color: #2c2929;
+    transform: scale(1.05);
+}

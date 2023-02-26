@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Оставить отзыв{% endblock %}
+
+{% block content %}
+<div class="g-otz">
+    <p>Оставьте свой отзыв:</p><br>
+<form action="{% url 'otzyv' %}" method="post">
+{% csrf_token %}
+{{pos.name}}<br>
+<br>
+
+{{pos.tel}}<br>
+<br>
+{{pos.text}}<br><br>
+{{pos.date}}<br>
+
+<br>
+<button class="dobst" type="submit">Добавить отзыв</button>
+</form>
+</div>
+{% endblock %}

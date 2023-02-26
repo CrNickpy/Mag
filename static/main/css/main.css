@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #cacad6;
+}
+
+.upper {
+    
+    color: rgb(40, 36, 36);
+    font-size: small;
+    text-align: right;
+
+}
+
+aside {
+    float: left;
+    background: rgb(255, 255, 255) ;
+    width: 20%;
+    min-height: 100vh;
+    border-right: 3px solid #b5b3b3;
+    border-left: 3px solid #ada9a9;
+    overflow: hidden;
+
+}
+aside h2 {
+    font-size: medium;
+}
+aside ul {
+    list-style: none;
+
+}
+aside  li a :{
+    color: black;
+    margin-top: 28px;
+    text-decoration: none;
+    font-size: medium;
+    display: block;
+    
+    margin: 12px 0;
+
+
+}
+.st :hover  {
+    transform: scale (1.2);
+    text-decoration: none;
+}
+.mainmenu a {
+    color: rgb(25, 2, 43);
+    display: inline;
+    font-size: large;
+    text-decoration: none;
+
+}
+.mainmenu a:hover{
+    color: #ada9a9;
+}
+.my-top  {
+    display: inline;
+    width: 60%;
+    margin-left: 200px;
+    
+}
+
+.header {
+    max-width: 2000px;
+    height: 80px;
+    background-color: rgb(250, 249, 249);
+    border : 3px solid rgb(62, 62, 62);
+    border-color: rgb(157, 154, 154);
+    border-radius: 5px;
+}
+.side h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.st {
+    margin-left: 40px;
+    margin-top: 30px;
+    display: block;
+}
+.st li {
+    margin-left: 80px;
+    display: block;    
+
+    
+    
+} 
+
+
+ .logo  {
+    margin-left: 40px;
+    text-decoration: none;
+    list-style: none;
+    bottom: 40px;
+    display: inline;
+   
+ }
+
+ .gl-str {
+    text-align: center;
+    margin-top: 38px;
+ }
+.gl-str p {
+    font-size: 30px;
+}
+.aaa a {
+    text-decoration: none;
+    color: rgb(24, 23, 23);
+    font-size: large;
+}
+.aaa a:hover{
+    color: rgb(121, 125, 125);
+}

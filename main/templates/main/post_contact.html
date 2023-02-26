@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Обратный звонок{% endblock %}
+
+{% block content %}
+<div class="g-cont">
+    <p>Оставьте свой контакт:</p><br><br>
+<form action="{% url 'contact' %}" method="post">
+{% csrf_token %}
+{{con.name}}<br>
+<br>
+
+{{con.tel}}<br>
+<br>
+
+
+<br>
+<button class="dobst" type="submit">Получить консультацию</button>
+</form>
+</div>
+{% endblock %}
